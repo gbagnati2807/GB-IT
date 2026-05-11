@@ -12,7 +12,7 @@
     h1 { text-align:center; font-size:36px; margin-bottom:10px; }
     .subtitle { text-align:center; color:#cbd5e1; margin-bottom:30px; }
 
-    .cta { display:flex; justify-content:center; gap:15px; margin-bottom:40px; }
+    .cta { display:flex; justify-content:center; gap:15px; margin-bottom:40px; flex-wrap:wrap; }
 
     .btn {
       background:#22c55e;
@@ -45,10 +45,24 @@
       border-radius:12px;
       margin-top:40px;
       text-align:center;
+      border:1px solid #22c55e;
     }
 
     .contact { text-align:center; margin-top:50px; color:#cbd5e1; }
 
+    /* WhatsApp floating */
+    .wa-float {
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25d366;
+      color:white;
+      padding:15px 18px;
+      border-radius:50px;
+      font-weight:bold;
+      text-decoration:none;
+      box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    }
   </style>
 </head>
 
@@ -59,7 +73,7 @@
   <!-- HERO -->
   <h1>Bagnati IT Solutions</h1>
   <p class="subtitle">
-    Soporte IT, Microsoft 365 y seguridad para empresas que no quieren perder tiempo con problemas técnicos
+    Soluciones Cloud en Azure, Soporte IT y Seguridad para empresas que no quieren perder tiempo con problemas técnicos
   </p>
 
   <div class="cta">
@@ -70,35 +84,45 @@
     </a>
   </div>
 
+  <!-- AUDITORIA GRATIS -->
+  <div class="highlight">
+    <h2>🚀 Auditoría IT GRATIS en 1 hora</h2>
+    <p>Te analizo tu infraestructura actual y te digo qué está mal, qué mejorar y cómo optimizarlo.</p>
+    <br>
+    <a class="btn" href="https://wa.me/5491176116754" target="_blank">
+      Solicitar auditoría gratis
+    </a>
+  </div>
+
   <!-- PROBLEMAS -->
   <div class="section">
-    <h2>¿Te pasa esto en tu empresa?</h2>
+    <h2>¿Te pasa esto?</h2>
     <ul class="problems">
-      <li>❌ Las computadoras fallan y nadie lo resuelve rápido</li>
-      <li>❌ Perdés tiempo con problemas técnicos</li>
-      <li>❌ No tenés soporte IT confiable</li>
-      <li>❌ Tenés miedo de perder información</li>
+      <li>❌ Problemas constantes con computadoras o red</li>
+      <li>❌ No sabés si tu empresa está segura</li>
+      <li>❌ Perdida de tiempo por fallas técnicas</li>
+      <li>❌ No tenés a quién llamar cuando algo falla</li>
     </ul>
   </div>
 
   <!-- SERVICIOS -->
   <div class="section">
-    <h2>Cómo te ayudo</h2>
+    <h2>Servicios</h2>
     <div class="services">
 
       <div class="card">
-        <h3>🔧 Soporte IT</h3>
-        <p>Resuelvo problemas, mantengo tus sistemas y hago que todo funcione.</p>
+        <h3>☁️ Cloud Azure</h3>
+        <p>Migración a la nube, servidores y optimización en Microsoft Azure.</p>
       </div>
 
       <div class="card">
-        <h3>☁️ Microsoft 365</h3>
-        <p>Emails profesionales, archivos en la nube y trabajo ordenado.</p>
+        <h3>🔧 Soporte IT</h3>
+        <p>Resolución de problemas y mantenimiento para que todo funcione.</p>
       </div>
 
       <div class="card">
         <h3>🔒 Seguridad</h3>
-        <p>Backups y protección para que no pierdas información ni tengas riesgos.</p>
+        <p>Backups, protección y prevención de riesgos tecnológicos.</p>
       </div>
 
     </div>
@@ -107,7 +131,7 @@
   <!-- CTA FINAL -->
   <div class="highlight">
     <h2>Dejá de perder tiempo con problemas de IT</h2>
-    <p>Te doy una solución simple para que tu empresa funcione sin interrupciones.</p>
+    <p>Te doy una solución simple, segura y escalable.</p>
 
     <br>
 
@@ -124,6 +148,11 @@
   </div>
 
 </div>
+
+<!-- BOTON FLOTANTE -->
+<a class="wa-float" href="https://wa.me/5491176116754" target="_blank">
+  WhatsApp
+</a>
 
 </body>
 </html>
