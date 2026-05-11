@@ -1,0 +1,72 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone } from "lucide-react";
+
+export default function ITConsultingPage() {
+  return (
+    <div className="p-6 grid gap-8">
+      {/* Hero */}
+      <section className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Bagnati IT Solutions</h1>
+        <p className="text-lg text-gray-600 mb-6">
+          Soluciones simples de tecnología para pequeñas empresas
+        </p>
+        <Button className="rounded-2xl px-6 py-3">Solicitar asesoría</Button>
+      </section>
+
+      {/* Servicios */}
+      <section className="grid md:grid-cols-3 gap-6">
+        <Card className="rounded-2xl shadow">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Soporte IT</h2>
+            <p className="text-gray-600">
+              Resolución de problemas, mantenimiento y soporte diario para que todo funcione.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Microsoft 365</h2>
+            <p className="text-gray-600">
+              Configuración de emails, almacenamiento en la nube y herramientas colaborativas.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card className="rounded-2xl shadow">
+          <CardContent className="p-4">
+            <h2 className="text-xl font-semibold mb-2">Seguridad</h2>
+            <p className="text-gray-600">
+              Protección de datos, backups y medidas para evitar hackeos o pérdidas de información.
+            </p>
+          </CardContent>
+        </Card>
+      </section>
+
+      {/* Beneficios */}
+      <section className="text-center">
+        <h2 className="text-2xl font-bold mb-4">¿Por qué elegirme?</h2>
+        <ul className="text-gray-600 space-y-2">
+          <li>✔ Lenguaje simple, sin tecnicismos</li>
+          <li>✔ Respuesta rápida</li>
+          <li>✔ Soluciones completas</li>
+          <li>✔ Experiencia en entornos empresariales reales</li>
+        </ul>
+      </section>
+
+      {/* Contacto */}
+      <section className="text-center">
+        <h2 className="text-2xl font-bold mb-4">Contacto</h2>
+        <div className="flex justify-center gap-4">
+          <Button variant="outline" className="flex gap-2">
+            <Mail size={16}/> gerardobagnati@hotmail.com
+          </Button>
+          <Button variant="outline" className="flex gap-2">
+            <Phone size={16}/> +54 9 11 7611 6754
+          </Button>
+        </div>
+      </section>
+    </div>
+  );
+}
